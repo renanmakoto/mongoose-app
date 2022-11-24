@@ -8,3 +8,10 @@ Then, I installed the Express.JS using the command "npm install express", so aft
 As a last step I installed the Mongoose modules with the "npm install mongoose" command.
 
 This app is still being developed.
+
+
+November, 24th=======================================================
+
+A few lines were added in order to read a database object.
+
+=====================================================================
