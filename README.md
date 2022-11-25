@@ -15,3 +15,9 @@ November, 24th=======================================================
 A few lines were added in order to read a database object.
 
 =====================================================================
+
+November, 25th=======================================================
+
+The codes were better organized in order make them more readable. Which means they were put into different folders.
+
+=====================================================================
