@@ -21,3 +21,9 @@ November, 25th=======================================================
 The codes were better organized in order make them more readable. Which means they were put into different folders.
 
 =====================================================================
+
+November, 28th=======================================================
+
+The front end part of the application was developed and connected to the back end part.
+
+=====================================================================
