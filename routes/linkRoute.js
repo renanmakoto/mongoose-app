@@ -4,6 +4,8 @@ const linkControl = require('../controls/linkControl');
 
 router.get('/:title', linkControl.redirect);
 
-router.get('/', (req, res) => res.send('Hello, World!'));
+router.post('/', express.urlencoded({ extended: true }), linkControl.addLink);
+
+router.get('/', (req, res) => res.render('index'));
 
 module.exports = router;

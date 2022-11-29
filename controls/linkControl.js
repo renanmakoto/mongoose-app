@@ -13,9 +13,26 @@ const redirect = async (req, res) => {
 
     } catch (error) {
 
-        res.send("There's been an error.");
+        res.send(error);
 
     }
 };
 
-module.exports = { redirect }
+const addLink = async (req, res) => {
+
+    let link = new docModelLink(req.body)
+
+    try {
+
+        let doc = await link.save()
+        res.send("Link added succesfully.");
+
+    } catch (error) {
+
+        res.send(error)
+
+    }
+
+};
+
+module.exports = { redirect, addLink };
