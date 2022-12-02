@@ -10,11 +10,16 @@
 
 <body>
     <form action="/" method="POST">
-        <input class="field" name="title" placeholder="title" required>
-        <input class="field" name="description" placeholder="description">
-        <input class="field" name="url" placeholder="URL" required>
+        <input class="field" name="title" placeholder="title" required value="<%=body.title%>">
+        <input class="field" name="description" placeholder="description" required value="<%=body.description%>">
+        <input class="field" name="url" placeholder="URL" required value="<%=body.url%>">
         <button>Save</button>
     </form>
+    <%if (error){%>
+        <h3>
+            <%=error.message%>
+        </h3>
+        <%}%>
 </body>
 
 </html>

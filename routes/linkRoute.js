@@ -6,6 +6,6 @@ router.get('/:title', linkControl.redirect);
 
 router.post('/', express.urlencoded({ extended: true }), linkControl.addLink);
 
-router.get('/', (req, res) => res.render('index'));
+router.get('/', (req, res) => res.render('index', { error: false, body: {} }));
 
 module.exports = router;
