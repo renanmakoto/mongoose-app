@@ -27,3 +27,9 @@ November, 28th=======================================================
 The front end part of the application was developed and connected to the back end part.
 
 =====================================================================
+
+December, 2nd========================================================
+
+Definition of routes redirection were added.
+
+=====================================================================
