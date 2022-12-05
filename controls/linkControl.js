@@ -26,13 +26,25 @@ const addLink = async (req, res) => {
 };
 
 const allLinks = async (req, res) => {
-
     try {
         let links = await docModelLink.find({});
-        res.send(links);
+        res.render('all', { links });
     } catch (error) {
         res.send(error);
     }
 }
 
-module.exports = { redirect, addLink, allLinks };
+const deleteLink = async (req, res) => {
+    let id = req.params.id;
+    if (!id) {
+        id = req.body.id;
+    }
+    try {
+        await docModelLink.findByIdAndDelete(id)
+        res.send(id)
+    } catch (error) {
+        res.status(404).send(error);
+    }
+}
+
+module.exports = { redirect, addLink, allLinks, deleteLink };
