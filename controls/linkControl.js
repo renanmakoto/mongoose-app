@@ -3,7 +3,7 @@ const docModelLink = require('../models/docModelLink');
 const redirect = async (req, res, next) => {
     let title = req.params.title;
     try {
-        let doc = await docModelLink.findOne({ title })
+        let doc = await docModelLink.findOneAndUpdate({ title }, { $inc: { click: 1 } })
         console.log(doc);
         if (doc) {
             res.redirect(doc.url);
@@ -21,7 +21,7 @@ const addLink = async (req, res) => {
         let doc = await link.save()
         res.redirect('/');
     } catch (error) {
-        res.render('index', { error, body: req.body });
+        res.render('add', { error, body: req.body });
     }
 };
 
