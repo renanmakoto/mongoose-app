@@ -1,35 +1,17 @@
-# mongoose-app
-An app I developed for practising my JavaScript skills with Mongoose, Express.JS and Node.JS.
+<h1 align="center">mongoose-app</h1> 
 
-First, I created the folder, so then I inserted the commando "npm init" to install the node modules.
+<p align="center">An app I developed for practising my JavaScript skills with Mongoose, Express.JS and Node.JS.</p>
 
-Then, I installed the Express.JS using the command "npm install express", so after that I could use the method "require()".
-
-As a last step I installed the Mongoose modules with the "npm install mongoose" command.
-
-This app is still being developed.
+<div align="center">
+  
+TECHNOLOGIES USED:
 
 
-November, 24th=======================================================
+<a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" style="width: 64px; height: 64px;" /></a>
+<a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" style="width: 44px; height: 64px;" /></a>
+<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/64px-JavaScript-logo.png" /></a>
+  
+</div>
 
-A few lines were added in order to read a database object.
 
-=====================================================================
-
-November, 25th=======================================================
-
-The codes were better organized in order make them more readable. Which means they were put into different folders.
-
-=====================================================================
-
-November, 28th=======================================================
-
-The front end part of the application was developed and connected to the back end part.
-
-=====================================================================
-
-December, 2nd========================================================
-
-Definition of routes redirection were added.
-
-=====================================================================
+<p align="center">With ❤ by <img src=https://img.shields.io/badge/-dotExtension-black /> <p/>
