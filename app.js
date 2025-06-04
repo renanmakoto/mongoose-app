@@ -8,7 +8,7 @@ const linkRoute = require('./routes/linkRoute')
 mongoose.connect('mongodb://localhost/mongoose-app', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+})
 
 
 let db = mongoose.connection;
