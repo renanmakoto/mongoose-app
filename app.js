@@ -16,7 +16,7 @@ let db = mongoose.connection
 db.on("error", () => { console.log("There has been an error.") })
 db.once("open", () => { console.log("Database loaded.") })
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'templates'));
 
 app.use('/', linkRoute);
