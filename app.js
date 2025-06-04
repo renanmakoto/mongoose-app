@@ -13,7 +13,7 @@ mongoose.connect('mongodb://localhost/mongoose-app', {
 
 let db = mongoose.connection
 
-db.on("error", () => { console.log("There has been an error.") });
+db.on("error", () => { console.log("There has been an error.") })
 db.once("open", () => { console.log("Database loaded.") });
 
 app.set('view engine', 'ejs');
