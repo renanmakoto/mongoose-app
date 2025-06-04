@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 const mongoose = require('mongoose')
 const path = require('path')
-const linkRoute = require('./routes/linkRoute');
+const linkRoute = require('./routes/linkRoute')
 
 mongoose.connect('mongodb://localhost/mongoose-app', {
     useNewUrlParser: true,
