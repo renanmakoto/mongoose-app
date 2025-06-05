@@ -17,7 +17,7 @@ db.on("error", () => { console.log("There has been an error.") })
 db.once("open", () => { console.log("Database loaded.") })
 
 app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'templates'));
+app.set('views', path.join(__dirname, 'templates'))
 
 app.use('/', linkRoute);
 app.listen(port, () => console.log(`Server running on port ${port}`))
