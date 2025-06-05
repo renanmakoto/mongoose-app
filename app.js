@@ -10,7 +10,6 @@ mongoose.connect('mongodb://localhost/mongoose-app', {
     useUnifiedTopology: true
 })
 
-
 let db = mongoose.connection
 
 db.on("error", () => { console.log("There has been an error.") })
