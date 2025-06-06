@@ -16,6 +16,7 @@
     <div class="container">
         <h1>Links</h1>
         <a href="/add">Add link</a>
+
         <% for (let i=0; i < links.length; i++) { %>
             <div class="card p-3 mb-3" id='<%=links[i]._id%>'>
                 <form class="d-flex align-items-center justify-content-between" method="POST" action="/?_method=DELETE">
