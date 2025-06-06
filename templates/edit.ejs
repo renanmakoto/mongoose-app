@@ -13,6 +13,7 @@
 <body>
     <div class="container w-50">
         <h1>Edit link</h1>
+
         <form class="d-flex flex-column" action="/edit/<%=body.id%>" method="POST">
             <input class="mb-2" name="title" placeholder="title" required value="<%=body.title%>">
             <input class="mb-2" name="description" placeholder="description" required value="<%=body.description%>">
