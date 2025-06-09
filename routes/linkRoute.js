@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.use(methodOverride('_method'))
 
-const linkControl = require('../controls/linkControl');
+const linkControl = require('../controls/linkControl')
 
 router.get('/', linkControl.allLinks);
 router.get('/:title', linkControl.redirect);
