@@ -12,7 +12,7 @@ router.get('/add', (req, res) => res.render('add', { error: false, body: {} }))
 router.get('/edit/:id', linkControl.loadLink)
 
 router.post('/', express.urlencoded({ extended: true }), linkControl.addLink)
-router.post('/edit/:id', express.urlencoded({ extended: true }), linkControl.editLink);
+router.post('/edit/:id', express.urlencoded({ extended: true }), linkControl.editLink)
 
 router.delete('/:id', linkControl.deleteLink)
 router.delete('/', express.urlencoded({ extended: true }), linkControl.deleteLink)
