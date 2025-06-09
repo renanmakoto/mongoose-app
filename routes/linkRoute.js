@@ -2,7 +2,7 @@ const express = require('express')
 const methodOverride = require('method-override')
 const router = express.Router()
 
-router.use(methodOverride('_method'));
+router.use(methodOverride('_method'))
 
 const linkControl = require('../controls/linkControl');
 
