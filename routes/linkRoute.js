@@ -8,7 +8,7 @@ const linkControl = require('../controls/linkControl')
 
 router.get('/', linkControl.allLinks)
 router.get('/:title', linkControl.redirect)
-router.get('/add', (req, res) => res.render('add', { error: false, body: {} }));
+router.get('/add', (req, res) => res.render('add', { error: false, body: {} }))
 router.get('/edit/:id', linkControl.loadLink);
 
 router.post('/', express.urlencoded({ extended: true }), linkControl.addLink);
