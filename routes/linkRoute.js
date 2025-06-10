@@ -17,4 +17,4 @@ router.post('/edit/:id', express.urlencoded({ extended: true }), linkControl.edi
 router.delete('/:id', linkControl.deleteLink)
 router.delete('/', express.urlencoded({ extended: true }), linkControl.deleteLink)
 
-module.exports = router;
+module.exports = router
