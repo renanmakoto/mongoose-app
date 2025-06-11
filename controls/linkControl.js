@@ -4,7 +4,7 @@ const redirect = async (req, res, next) => {
     let title = req.params.title
     try {
         let doc = await docModelLink.findOneAndUpdate({ title }, { $inc: { click: 1 } })
-        console.log(doc);
+        console.log(doc)
         if (doc) {
             res.redirect(doc.url);
         } else {
