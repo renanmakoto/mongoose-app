@@ -1,7 +1,7 @@
 const docModelLink = require('../models/docModelLink')
 
 const redirect = async (req, res, next) => {
-    let title = req.params.title;
+    let title = req.params.title
     try {
         let doc = await docModelLink.findOneAndUpdate({ title }, { $inc: { click: 1 } })
         console.log(doc);
