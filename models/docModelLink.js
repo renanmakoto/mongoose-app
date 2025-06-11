@@ -5,6 +5,6 @@ const linkSchema = new mongoose.Schema({
     description: String,
     url: { type: String, required: true },
     click: { type: Number, default: 0 }
-});
+})
 
 module.exports = mongoose.model('docModelLink', linkSchema);
