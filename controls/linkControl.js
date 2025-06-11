@@ -1,4 +1,4 @@
-const docModelLink = require('../models/docModelLink');
+const docModelLink = require('../models/docModelLink')
 
 const redirect = async (req, res, next) => {
     let title = req.params.title;
