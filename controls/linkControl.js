@@ -55,7 +55,7 @@ const loadLink = async (req, res) => {
 
     try {
         let doc = await docModelLink.findById(id)
-        res.render('edit', { error: false, body: doc });
+        res.render('edit', { error: false, body: doc })
     } catch (error) {
         res.status(404).send(error);
     }
