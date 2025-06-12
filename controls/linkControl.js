@@ -12,7 +12,7 @@ const redirect = async (req, res, next) => {
             next()
         }
     } catch (error) {
-        res.send(error);
+        res.send(error)
     }
 };
 
