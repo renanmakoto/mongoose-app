@@ -14,7 +14,7 @@ const redirect = async (req, res, next) => {
     } catch (error) {
         res.send(error)
     }
-};
+}
 
 const addLink = async (req, res) => {
     let link = new docModelLink(req.body)
