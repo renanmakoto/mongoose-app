@@ -25,7 +25,7 @@ const addLink = async (req, res) => {
     } catch (error) {
         res.render('add', { error, body: req.body })
     }
-};
+}
 
 const allLinks = async (req, res) => {
     try {
