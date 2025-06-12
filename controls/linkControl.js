@@ -18,6 +18,7 @@ const redirect = async (req, res, next) => {
 
 const addLink = async (req, res) => {
     let link = new docModelLink(req.body)
+    
     try {
         let doc = await link.save()
         res.redirect('/');
