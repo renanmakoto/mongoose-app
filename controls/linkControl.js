@@ -21,7 +21,7 @@ const addLink = async (req, res) => {
     
     try {
         let doc = await link.save()
-        res.redirect('/');
+        res.redirect('/')
     } catch (error) {
         res.render('add', { error, body: req.body });
     }
