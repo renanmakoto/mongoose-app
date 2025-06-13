@@ -32,7 +32,7 @@ const allLinks = async (req, res) => {
         let docs = await docModelLink.find({})
         res.render('all', { links: docs })
     } catch (error) {
-        res.send(error);
+        res.send(error)
     }
 }
 
