@@ -39,7 +39,7 @@ const allLinks = async (req, res) => {
 const deleteLink = async (req, res) => {
     let id = req.params.id
     if (!id) {
-        id = req.body.id;
+        id = req.body.id
     }
     try {
         await docModelLink.findByIdAndDelete(id)
