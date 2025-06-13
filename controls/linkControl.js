@@ -44,7 +44,7 @@ const deleteLink = async (req, res) => {
     try {
         await docModelLink.findByIdAndDelete(id)
         // res.send(id)
-        res.redirect('/');
+        res.redirect('/')
     } catch (error) {
         res.status(404).send(error);
     }
