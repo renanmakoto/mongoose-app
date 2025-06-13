@@ -37,7 +37,7 @@ const allLinks = async (req, res) => {
 }
 
 const deleteLink = async (req, res) => {
-    let id = req.params.id;
+    let id = req.params.id
     if (!id) {
         id = req.body.id;
     }
