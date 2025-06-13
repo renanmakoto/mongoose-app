@@ -30,7 +30,7 @@ const addLink = async (req, res) => {
 const allLinks = async (req, res) => {
     try {
         let docs = await docModelLink.find({})
-        res.render('all', { links: docs });
+        res.render('all', { links: docs })
     } catch (error) {
         res.send(error);
     }
