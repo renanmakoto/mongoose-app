@@ -62,7 +62,7 @@ const loadLink = async (req, res) => {
 }
 
 const editLink = async (req, res) => {
-    let link = {};
+    let link = {}
     link.title = req.body.title;
     link.description = req.body.description;
     link.url = req.body.url;
