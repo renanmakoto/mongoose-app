@@ -51,7 +51,7 @@ const deleteLink = async (req, res) => {
 }
 
 const loadLink = async (req, res) => {
-    let id = req.params.id;
+    let id = req.params.id
 
     try {
         let doc = await docModelLink.findById(id)
