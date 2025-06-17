@@ -80,6 +80,6 @@ const editLink = async (req, res) => {
     } catch (error) {
         res.render('edit', { error, body: req.body })
     }
-};
+}
 
 module.exports = { redirect, addLink, allLinks, deleteLink, loadLink, editLink };
