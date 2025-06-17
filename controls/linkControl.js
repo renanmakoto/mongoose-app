@@ -76,7 +76,7 @@ const editLink = async (req, res) => {
 
     try {
         let doc = await docModelLink.updateOne({ _id: id }, link)
-        res.redirect('/');
+        res.redirect('/')
     } catch (error) {
         res.render('edit', { error, body: req.body });
     }
