@@ -82,4 +82,4 @@ const editLink = async (req, res) => {
     }
 }
 
-module.exports = { redirect, addLink, allLinks, deleteLink, loadLink, editLink };
+module.exports = { redirect, addLink, allLinks, deleteLink, loadLink, editLink }
