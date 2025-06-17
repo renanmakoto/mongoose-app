@@ -69,7 +69,7 @@ const editLink = async (req, res) => {
 
     let id = req.params.id
     if (!id) {
-        id = req.body.id;
+        id = req.body.id
     }
 
     console.log(id)
